@@ -1,0 +1,88 @@
+.navbar {
+    opacity: 0.8;
+    background-color: var(--chamoisee);
+    color: var(--almond);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    height: 50px;
+    width: 50px;
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.toggler-icon {
+    width: 50px;
+    height: 3px;
+    background: var(--raw-umber);
+    display: block;
+    transition: all 0.2s;
+}
+
+.bar {
+    margin: 10px 0;
+}
+
+.navbar-toggler .toggler-icon {
+    background: var(--raw-umber);
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 14% 14%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 14% 14%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: rgb(0, 0, 0);
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 30px;
+}
+
+.logo {
+    width: 50px;
+    border: 1px dashed transparent;
+    border-radius: 50%;
+}

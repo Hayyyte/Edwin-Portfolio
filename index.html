@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.svg">
+    <title>Edwin Jiang</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="stylesheets/theme.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@300&f[]=excon@500&display=swap" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="images/logo.svg" alt=""></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon bar top-bar"></span>
+            <span class="toggler-icon bar middle-bar"></span>
+            <span class="toggler-icon bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" onclick="closeNavbar()">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Hero Page -->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Hello, I'm</h2>
+            <h1>Edwin Jiang</h1>
+            <p>I'm a web developer based in Canada. I love making websites and learning new things. I am currently learning React and Node.js.
+          </div>
+          <div class="col d-flex justify-content-center">
+            <img class="headshot" src="images/rat.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="text-center">Projects</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Project 1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint suscipit, sed laboriosam non repellat eos iure unde magni aliquam quisquam eius provident dolorem ipsum in libero facilis earum distinctio.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Project 2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam quidem aliquid adipisci, hic voluptatem accusamus. Deserunt tenetur beatae laudantium delectus dolorem architecto neque cum, dolore, inventore distinctio ipsum explicabo.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Project 3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum pariatur earum alias esse assumenda, nihil officiis. Doloribus nisi soluta rerum beatae. Distinctio ratione quia fugiat culpa praesentium quisquam. Enim, reprehenderit.</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+        <!-- About -->
+        <section id="about">
+            <div class="container d-flex flex-column">
+              <div class="text-end ">
+                <h1>About</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit consequuntur nihil labore ut beatae qui assumenda omnis quisquam deleniti, doloribus quibusdam? Voluptatem, soluta ex a voluptates libero molestiae accusamus unde?</p>
+              </div>
+              <div class="text-center">
+                <img class="headshot" src="images/rat.jpg" alt="">
+                <p>(This is me irl)</p>
+              </div>
+            </div>
+        </section>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container text-center  d-flex flex-column justify-content-center">
+            <h1 >Contact</h1>
+            <p>Looking for collaborative project opportunities? Feel free to reach out and let's discuss your ideas!</p>
+            <p>Email: 9JZ5h@example.com</p>
+        </div>
+    </section>
+
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function closeNavbar() {
+        $(".navbar-toggler").click();
+      }
+    </script>
+</body>
+</html>
