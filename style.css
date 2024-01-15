@@ -98,3 +98,21 @@ h2 {
         margin-bottom: 25%;
     }
 }
+/* Small animations */
+@media (prefers-reduced-motion: no-preference) {
+    .container > * {
+        opacity: 0;
+        animation: fadeIn linear forwards;
+        animation-delay: 0.5s;
+        animation-timeline: view();
+        animation-range: entry 5%;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
+    }
+}
