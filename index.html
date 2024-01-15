@@ -40,7 +40,7 @@
         </div>
     </nav>
     <!-- Hero Page -->
-    <section id="hero">
+    <section class="d-flex align-items-center" id="hero">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -48,14 +48,14 @@
             <h1>Edwin Jiang</h1>
             <p>I'm a web developer based in Canada. I love making websites and learning new things. I am currently learning React and Node.js.
           </div>
-          <div class="col d-flex justify-content-center">
+          <div class="col d-flex align-items-center justify-content-center">
             <img class="headshot" src="images/rat.jpg" alt="">
           </div>
         </div>
       </div>
     </section>
     <!-- Projects -->
-    <section id="projects">
+    <section class="d-flex align-items-center" id="projects">
         <div class="container">
             <h1 class="text-center">Projects</h1>
             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -93,7 +93,7 @@
         </div>
     </section>
         <!-- About -->
-        <section id="about">
+        <section class="d-flex align-items-center" id="about">
             <div class="container d-flex flex-column">
               <div class="text-end ">
                 <h1>About</h1>
@@ -106,21 +106,15 @@
             </div>
         </section>
     <!-- Contact -->
-    <section id="contact">
+    <section class="d-flex align-items-center" id="contact">
         <div class="container text-center  d-flex flex-column justify-content-center">
             <h1 >Contact</h1>
             <p>Looking for collaborative project opportunities? Feel free to reach out and let's discuss your ideas!</p>
-            <p>Email: 9JZ5h@example.com</p>
+            <p>Email: edwin.jiang2@gmail.com</p>
         </div>
     </section>
-
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-      function closeNavbar() {
-        $(".navbar-toggler").click();
-      }
-    </script>
+    <script src="background.js"></script>
 </body>
 </html>

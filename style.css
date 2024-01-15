@@ -1,12 +1,16 @@
 /* Body */
 body {
-    height: 300vh;
     background-color: var(--almond);
     color: var(--coffee);
     font-family: 'Ranade', sans-serif;
     font-size: 25px;
     user-select: none;
     -webkit-user-drag: none;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+section {
+    height: 100vh;
 }
 
 h1 {
@@ -20,15 +24,9 @@ h2 {
 }
 
 /* Hero */
-#hero {
-    background-color: var(--almond);
-    color: var(--coffee);
-    padding-top: 10%;
-}
-
 .headshot {
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     border: 1px dashed #000;
     border-radius: 50%;
     padding: 0;
@@ -36,34 +34,16 @@ h2 {
 }
 
 /* Projects */
-#projects {
-    background-color: var(--tan);
-    color: var(--chamoisee);
-    height: 95vh;
-}
 .accordion-button {
     font-size: 30px;
 }
 
 /* About */
-#about {
-    background-color: var(--coffee);
-    color: var(--almond);
-    padding-top: 25%;
-}
 
 /* Contact */
-#contact {
-    background-color: var(--raw-umber);
-    color: var(--almond);
-    height: 100vh;
-}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    #hero, #projects, #about, #contact {
-        height: 95vh;
-    }
     
     #projects, #about {
         padding-top: 25%;
