@@ -9,6 +9,11 @@ body {
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 section {
     height: 100vh;
 }
@@ -33,6 +38,11 @@ h2 {
     margin: 0;
 }
 
+.social-button {
+    aspect-ratio: 1;
+    width: 50px;
+    display: inline-block;
+}
 /* Projects */
 .accordion-button {
     font-size: 30px;
