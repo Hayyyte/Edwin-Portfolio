@@ -64,38 +64,29 @@
     <section class="d-flex align-items-center" id="projects">
         <div class="container">
             <h1 class="text-center">Projects</h1>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Project 1
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint suscipit, sed laboriosam non repellat eos iure unde magni aliquam quisquam eius provident dolorem ipsum in libero facilis earum distinctio.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Project 2
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam quidem aliquid adipisci, hic voluptatem accusamus. Deserunt tenetur beatae laudantium delectus dolorem architecto neque cum, dolore, inventore distinctio ipsum explicabo.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Project 3
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum pariatur earum alias esse assumenda, nihil officiis. Doloribus nisi soluta rerum beatae. Distinctio ratione quia fugiat culpa praesentium quisquam. Enim, reprehenderit.</div>
-                  </div>
-                </div>
-              </div>
+            <p class="text-center">Here are some of the projects I've worked on. (Hover over the cards to pause)</p>
+            <div class="project-carousel">
+              <ul class="project-list">
+                <li class="project-item">
+                  <h2>Project 1</h2>
+                  <img src="images/rat.jpg" alt="">
+                  <p>Project 1 description. I used Bootstrap.</p>
+                  <button type="button" class="btn btn-primary project-button">View Project</button>
+                </li>
+                <li class="project-item">
+                  <h2>Project 2</h2>
+                  <img src="images/rat.jpg" alt="">
+                  <p>Project 2 description. I used Bootstrap.</p>
+                  <button type="button" class="btn btn-primary project-button">View Project</button>
+                </li>
+                <li class="project-item">
+                  <h2>Project 3</h2>
+                  <img src="images/rat.jpg" alt="">
+                  <p>Project 3 description. I used Bootstrap.</p>
+                  <button type="button" class="btn btn-primary project-button">View Project</button>
+                </li>
+              </ul>
+            </div>
         </div>
     </section>
         <!-- About -->
@@ -103,13 +94,10 @@
             <div class="container d-flex flex-column">
               <div class="text-end ">
                 <h1>About</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit consequuntur nihil labore ut beatae qui assumenda omnis quisquam deleniti, doloribus quibusdam? Voluptatem, soluta ex a voluptates libero molestiae accusamus unde?</p>
-              </div>
-              <div class="text-center">
-                <img class="headshot" src="images/rat.jpg" alt="">
-                <p>(This is me irl)</p>
-              </div>
+                <p>This website was built using lots of blood, sweat, and tears (& Bootstrap).</p>
+              </div>            
             </div>
+          </div>
         </section>
     <!-- Contact -->
     <section class="d-flex align-items-center" id="contact">
@@ -121,6 +109,7 @@
     </section>
     <!-- Scripts -->
     <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="background.js"></script>
+    <script src="scripts/background.js"></script>
+    <script src="scripts/projects.js"></script>
 </body>
 </html>
