@@ -17,28 +17,28 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="images/logo.svg" alt=""></a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon bar top-bar"></span>
-            <span class="toggler-icon bar middle-bar"></span>
-            <span class="toggler-icon bar bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects" onclick="closeNavbar()">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
-                </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon bar top-bar"></span>
+          <span class="toggler-icon bar middle-bar"></span>
+          <span class="toggler-icon bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a>
+                  <a class="nav-link" href="/index.html#projects" onclick="closeNavbar()">Projects</a>
               </li>
-            </ul>
-          </div>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#about" onclick="closeNavbar()">About</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html#contact" onclick="closeNavbar()">Contact</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </div>
+  </nav>
     <!-- Hero Page -->
     <section class="d-flex align-items-center" id="hero">
       <div class="container">
@@ -68,38 +68,43 @@
             <div class="project-carousel">
               <ul class="project-list">
                 <li class="project-item">
-                  <h2>Project 1</h2>
+                  <h2>Beginner Projects</h2>
                   <img src="images/rat.jpg" alt="">
-                  <p>Project 1 description. I used Bootstrap.</p>
-                  <button type="button" class="btn btn-primary project-button">View Project</button>
+                  <p>These are all my beginner projects.</p>
+                  <button type="button" class="btn btn-primary project-button"><a href="/projects.html#">View Projects</a></button>
                 </li>
                 <li class="project-item">
-                  <h2>Project 2</h2>
+                  <h2>Advanced Projects</h2>
                   <img src="images/rat.jpg" alt="">
-                  <p>Project 2 description. I used Bootstrap.</p>
-                  <button type="button" class="btn btn-primary project-button">View Project</button>
+                  <p>These are all my advanced projects.</p>
+                  <button type="button" class="btn btn-primary project-button "><a href="/projects#">View Projects</a></button>
                 </li>
                 <li class="project-item">
-                  <h2>Project 3</h2>
+                  <h2>Professional Projects</h2>
                   <img src="images/rat.jpg" alt="">
-                  <p>Project 3 description. I used Bootstrap.</p>
-                  <button type="button" class="btn btn-primary project-button">View Project</button>
+                  <p>These are all my professional projects.</p>
+                  <button type="button" class="btn btn-primary project-button "><a href="/projects#">View Projects</a></button>
                 </li>
               </ul>
             </div>
         </div>
     </section>
-        <!-- About -->
-        <section class="d-flex align-items-center" id="about">
-            <div class="container d-flex flex-column">
-              <div class="text-end ">
-                <h1>About</h1>
-                <p>This website was built using lots of blood, sweat, and tears (& Bootstrap).</p>
-              </div>            
-            </div>
-          </div>
-        </section>
-    <!-- Contact -->
+<!-- About -->
+  <section class="d-flex align-items-center" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img class="headshot" src="images/rat.jpg" alt="">
+          <p>(This is me irl)</p>
+        </div>
+        <div class="col d-flex flex-column mx-auto">
+          <h1>About</h1>
+          <p>This website was built using lots of blood, sweat, and tears (& Bootstrap).</p>
+        </div>            
+      </div>
+    </div>
+  </section>
+<!-- Contact -->
     <section class="d-flex align-items-center" id="contact">
         <div class="container text-center  d-flex flex-column justify-content-center">
             <h1 >Contact</h1>

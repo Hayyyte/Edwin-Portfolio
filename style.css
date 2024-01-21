@@ -29,10 +29,11 @@ h2 {
 }
 
 img {
-    cursor: grabbing;
+    cursor: grab;
 }
 
-img:active {cursor: grab;
+img:active {
+    cursor: grabbing;
     user-drag: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
