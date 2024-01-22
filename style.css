@@ -28,18 +28,6 @@ h2 {
     font-size: 36px;
 }
 
-img {
-    cursor: grab;
-}
-
-img:active {
-    cursor: grabbing;
-    user-drag: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
 
 /* Hero */
 .headshot {
@@ -55,6 +43,24 @@ img:active {
     aspect-ratio: 1;
     width: 50px;
     display: inline-block;
+}
+
+.social-button:hover {
+    opacity: 0.5;
+}
+
+.rat {
+    cursor: grab;
+}
+
+.rat:active {
+    cursor: grabbing;
+    transform: rotateY(180deg);
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 /* Projects */
 
@@ -113,6 +119,9 @@ img:active {
 /* About */
 
 /* Contact */
+.email:hover {
+    text-decoration: underline;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
