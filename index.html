@@ -46,6 +46,7 @@
     </div>
   </nav>
   <!-- Spline -->
+  <!-- Breaks when vw < 1024px -->
   <section>
     <div class="d-flex align-items-center justify-content-center" style="width: 100%; height: 100vh; background-color: white;">
       <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.33/build/spline-viewer.js"></script>
@@ -84,19 +85,19 @@
             <h2>Beginner Projects</h2>
             <img class="rat" src="images/rat.jpg" alt="">
             <p>These are all my beginner projects.</p>
-            <button type="button" class="btn btn-primary project-button"><a href="/projects.html#">View Projects</a></button>
+            <button type="button" class="btn btn-primary project-button"><a href="/projects.html">View Projects</a></button>
           </li>
           <li class="project-item">
             <h2>Advanced Projects</h2>
             <img class="rat" src="images/rat.jpg" alt="">
             <p>These are all my advanced projects.</p>
-            <button type="button" class="btn btn-primary project-button "><a href="/projects#">View Projects</a></button>
+            <button type="button" class="btn btn-primary project-button "><a href="/projects.html">View Projects</a></button>
           </li>
           <li class="project-item">
             <h2>Professional Projects</h2>
             <img class="rat" src="images/rat.jpg" alt="">
             <p>These are all my professional projects.</p>
-            <button type="button" class="btn btn-primary project-button "><a href="/projects#">View Projects</a></button>
+            <button type="button" class="btn btn-primary project-button "><a href="/projects.html">View Projects</a></button>
           </li>
         </ul>
       </div>
@@ -113,19 +114,21 @@
         <div class="col d-flex flex-column mx-auto">
           <h1>About</h1>
           <p>This website was built using lots of blood, sweat, and tears (& Bootstrap).</p>
-        </div>      
+        </div>
       </div>
     </div>
   </section>
   <!-- Contact -->
   <section class="d-flex align-items-center" id="contact">
-    <div class="container text-center  d-flex flex-column justify-content-center">
+    <div class="container text-center d-flex flex-column justify-content-center">
       <h1 >Contact</h1>
       <p>Looking for collaborative project opportunities? Feel free to reach out and let's discuss your ideas!</p>
       <p>Email: <a class="email" href="mailto:edwin.jiang2@gmail.com">edwin.jiang2@gmail.com</a></p>
     </div>
   </section>
-</div>
+  <div class="rat-cage">
+    <img src="images/rat-transparent.png" class="rat transparent-rat">
+  </div>
   <!-- Scripts -->
   <script src="bootstrap/bootstrap.min.js"></script>
   <script src="scripts/background.js"></script>

@@ -150,6 +150,20 @@ h2 {
     text-decoration: underline;
 }
 
+.rat-cage {
+    position: relative;
+    height: 0;
+    width: 100%;
+}
+
+.transparent-rat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     
