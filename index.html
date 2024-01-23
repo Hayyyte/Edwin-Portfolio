@@ -15,9 +15,15 @@
 
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
-    <div class="container-fluid">
+  <!-- Loader -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader"></div>
+  </div>
+  <!-- Main Content -->
+  <div class="main-content" id="mainContent">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+      <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="toggler-icon bar top-bar"></span>
@@ -26,12 +32,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html#projects" onclick="closeNavbar()">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html#about" onclick="closeNavbar()">About</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#projects" onclick="closeNavbar()">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#about" onclick="closeNavbar()">About</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/index.html#contact" onclick="closeNavbar()">Contact</a>
           </li>
@@ -39,6 +45,13 @@
       </div>
     </div>
   </nav>
+  <!-- Spline -->
+  <section>
+    <div class="d-flex align-items-center justify-content-center" style="width: 100%; height: 100vh; background-color: white;">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.33/build/spline-viewer.js"></script>
+      <spline-viewer loading-anim-type="none" url="https://prod.spline.design/lCZN6IlV02h6zWM3/scene.splinecode"></spline-viewer>
+    </div>
+  </section>
   <!-- Hero Page -->
   <section class="d-flex align-items-center" id="hero">
     <div class="container">
@@ -105,16 +118,18 @@
     </div>
   </section>
   <!-- Contact -->
-    <section class="d-flex align-items-center" id="contact">
-      <div class="container text-center  d-flex flex-column justify-content-center">
-          <h1 >Contact</h1>
-          <p>Looking for collaborative project opportunities? Feel free to reach out and let's discuss your ideas!</p>
-          <p>Email: <a class="email" href="mailto:edwin.jiang2@gmail.com">edwin.jiang2@gmail.com</a></p>
-      </div>
-    </section>
+  <section class="d-flex align-items-center" id="contact">
+    <div class="container text-center  d-flex flex-column justify-content-center">
+      <h1 >Contact</h1>
+      <p>Looking for collaborative project opportunities? Feel free to reach out and let's discuss your ideas!</p>
+      <p>Email: <a class="email" href="mailto:edwin.jiang2@gmail.com">edwin.jiang2@gmail.com</a></p>
+    </div>
+  </section>
+</div>
   <!-- Scripts -->
   <script src="bootstrap/bootstrap.min.js"></script>
   <script src="scripts/background.js"></script>
   <script src="scripts/projects.js"></script>
+  <script src="scripts/loader.js"></script>
 </body>
 </html>
