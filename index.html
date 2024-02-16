@@ -121,9 +121,23 @@
   <!-- Contact -->
   <section class="d-flex align-items-center" id="contact">
     <div class="container text-center d-flex flex-column justify-content-center">
-      <h1 >Contact</h1>
+      <h1>Contact</h1>
       <p>Looking for collaborative project opportunities? Feel free to reach out and let's discuss your ideas!</p>
-      <p>Email: <a class="email" href="mailto:edwin.jiang2@gmail.com">edwin.jiang2@gmail.com</a></p>
+      <!-- Contact Form -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <fieldset>
+          <legend>Contact Information</legend>
+            <div class="d-flex flex-column align-items-center gap-3">
+              <input type="hidden" name="access_key" value="5b7cccb7-9d77-44e6-838a-073bcb27bcc0">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="contact-input" required>
+              <input type="email" id="email" name="email" placeholder="Email" class="contact-input" required>
+              <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+            </div>
+    
+        </fieldset>
+        <button type="submit" class="contact-button">Submit</button>
+      </form>
+
     </div>
   </section>
   <div class="rat-cage">
