@@ -129,9 +129,22 @@
           <legend>Contact Information</legend>
             <div class="d-flex flex-column align-items-center gap-3">
               <input type="hidden" name="access_key" value="5b7cccb7-9d77-44e6-838a-073bcb27bcc0">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="contact-input" required>
-              <input type="email" id="email" name="email" placeholder="Email" class="contact-input" required>
-              <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+
+              <div class="form-floating">
+                <input type="text" id="name" name="name" placeholder="Full Name" class="form-control contact-input" style="height: 80px;" required>
+                <label for="name">Full Name <span class="red">*</span></label>
+              </div>
+
+              <div class="form-floating">
+                <input type="email" id="email" name="email" placeholder="Email" class="form-control contact-input" style="height: 80px;" required>
+                <label for="email">Email <span class="red">*</span></label>
+              </div>
+
+              <div class="form-floating">
+                <textarea id="message" name="message" rows="4" placeholder="Message" class="form-control" style="height: 250px; width: 400px; border-radius: 15px; padding-top: 50px;" required></textarea>
+                <label for="message">Message <span class="red">*</span></label>
+              </div>
+
             </div>
     
         </fieldset>

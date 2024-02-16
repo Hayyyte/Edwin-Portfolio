@@ -148,21 +148,21 @@ h2 {
 
 /* Contact */
 .contact-input {
-    height: 50px;
     width: 400px;
     border: 0;
-    border-radius: 50px;
+    border-radius: 25px;
     padding-left: 25px;
     outline: 0;
 }
 
 textarea {
-    height: 250px;
     width: 400px;
-    padding-left: 25px;
-    padding-top: 15px;
     border-radius: 20px;
     resize: none;
+}
+
+.red {
+    color: red;
 }
 
 .contact-button {
