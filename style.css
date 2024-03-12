@@ -252,3 +252,10 @@ textarea {
         }
     }
 }
+
+.content-box {
+    padding: 25px;
+    border-radius: 25px;
+    background-color: var(--dun);
+    color: var(--coffee); /* Ensure text is visible */
+}
