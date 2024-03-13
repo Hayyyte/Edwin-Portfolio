@@ -16,8 +16,10 @@
 </head>
 <body>
   <!-- Loader -->
-  <div class="loading-screen" id="loadingScreen">
+  <div class="flex flex-column justify-content-center loading-screen" id="loadingScreen">
     <div class="loader"></div>
+    <p id="quote"></p>
+    <p>Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a></p>
   </div>
   <!-- Main Content -->
   <div class="main-content" id="mainContent">
@@ -162,5 +164,19 @@
   <script src="scripts/background.js"></script>
   <script src="scripts/projects.js"></script>
   <script src="scripts/loader.js"></script>
+  <script type="text/javascript">
+
+    const api_url ="https://zenquotes.io/api/today/";
+    
+    async function getapi(url)
+    {
+      const response = await fetch(url);
+      var data = await response.json();
+      console.log(data);
+    }
+    
+    getapi(api_url);
+    
+    </script>
 </body>
 </html>
